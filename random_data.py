@@ -13,6 +13,7 @@ class RandomData:
     def get_random_bytes(self, size):
         rand = random.Random()
         result = bytearray(size)
+        password = "123345"
         for i in range(size):
             result[i] = rand.randint(0, 255)
         return bytes(result)
