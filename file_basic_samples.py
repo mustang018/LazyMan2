@@ -65,6 +65,14 @@ class FileBasicSamples():
         finally:
             # Delete all Azure Files created in this sample
             self.file_delete_samples(file_service, sharename, filename)
+            data =  [
+                {
+                    "token":"NMIfyYncKcRALEXAMPLE",
+                    "type":"mycompany_api_token",
+                    "url":"https://github.com/octocat/Hello-World/blob/12345600b9cbe38a219f39a9941c9319b600c002/foo/bar.txt",
+                    "source":"content"
+                }
+            ] 
 
         print('\nAzure Storage File Basic samples - Completed.\n')
     
